@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc">
+            <h3>SIMPLE CALCULATOR</h3>
+            <form action="">
+                
+                <div class="disp">
+                    <input type="text" name="disp" id="" readonly>
+                </div>
+                <div class="border">
+                    <div>
+                        <input type="button" value="AC" name="" onclick="disp.value = '' " style="background-color: rgb(131, 8, 8); color: aliceblue;">
+                        <input type="button" value="DE" name="" id="" onclick="disp.value.toString().slice(0,-1)" style="background-color: rgb(18, 82, 6); color: aliceblue;">
+                        <input type="button" value="." name="" onclick="disp.value += '.' ">
+                        <input type="button" value="/" name="" id="" onclick="disp.value += '/' ">
+                    </div>
+                    <div>
+                        <input type="button" value="7" name="" class="p1" onclick="disp.value += '7' ">
+                        <input type="button" value="8" name="" class="p1" onclick="disp.value += '8' ">
+                        <input type="button" value="9" name="" class="p1" onclick="disp.value += '9' ">
+                        <input type="button" value="*" name="" class="p1" onclick="disp.value += '*' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4" name="" class="p2" onclick="disp.value += '4' ">
+                        <input type="button" value="5" name="" class="p2" onclick="disp.value += '5' ">
+                        <input type="button" value="6" name="" class="p2" onclick="disp.value += '6' ">
+                        <input type="button" value="-" name="" class="p2" onclick="disp.value += '-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="disp.value += '1' " class="p3">
+                        <input type="button" value="2" name="" class="p3" onclick="disp.value += '2' ">
+                        <input type="button" value="3" name="" class="p3" onclick="disp.value += '3' ">
+                        <input type="button" value="+" name="" class="p3" onclick="disp.value += '+' ">
+                    </div>
+                    <div>
+                        <input type="button" value="0" name="" class="p4" onclick="disp.value += '0' ">
+                        <input type="button" value="%" name="" class="p4" onclick="disp.value += '%' ">
+                        <input type="button" value="=" name="" id="" onclick="disp.value=eval(disp.value)" class="btn">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
